@@ -51,6 +51,13 @@ public class Continent {
             d_countries.add(p_country);
         }
     }
+    public void removeCountry(Country p_country){
+        if(d_countries==null){
+            System.out.println("The Country entered does not exist. Please enter correct Country name");
+        }else {
+            d_countries.remove(p_country);
+        }
+    }
     public void removeCountryNeighboursFromAll(Integer p_countryId){
         if (null!=d_countries && !d_countries.isEmpty()) {
             for (Country c: d_countries){
